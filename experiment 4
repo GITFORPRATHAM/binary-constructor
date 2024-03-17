@@ -1,0 +1,45 @@
+#include<iostream>
+
+using namespace std;
+class hello{
+public:
+	int d,e,f;
+hello(int j,int k)
+{
+d=j,e=k;	
+	}	
+	double get_data()
+	{
+	
+	cout<<"d= "<<d<<endl;
+	cout<<"e= "<<e<<endl;;	
+		
+	}
+	double get_Binary() 
+{ int p,v=0,c;
+   cout<<"enter integer to convert it into binary= ";
+   cin>>p;
+    int a[20]; 
+    while (p> 0) { 
+  
+        // storing remainder in binary array 
+        a[v] = p % 2; 
+        p = p / 2; 
+        c++; 
+    } 
+  
+    // printing binary array in reverse order 
+    for (int j = v - 1; j >= 0; j--) 
+        cout << a[j]; 
+} 
+
+};
+int main()
+{
+hello ob(15,20);
+ob.get_data();	
+ob.get_Binary();
+
+
+return 0;
+}
